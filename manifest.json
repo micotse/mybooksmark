@@ -1,0 +1,38 @@
+{//配置页面，必须清楚每一项设置及用途
+  "manifest_version": 2,//清单文件版本，这里必须写，而且必须是2
+  "version": "1.0.2",//插件的版本
+  "name": "MICOTSE网页收藏夹",//插件的名称
+  "description": "MICOTSE网页收藏夹，收藏链接",//插件描述
+  "icons": {//图标，一般偷懒全部用一个尺寸也没问题
+    "16": "images/16icon.png",
+    "32": "images/32icon.png",
+    "38": "images/38icon.png",
+    "48": "images/48icon.png",
+    "64": "images/64icon.png",
+    "128": "images/128icon.png"
+  },
+
+  "background": {//会一直常驻的后台JS或者后台页面
+    "scripts":["js/background.js"]
+  },
+  
+  "browser_action": {//浏览器右上角设置，brawser_action,page_action,app必须三选一
+    "default_icon":"images/16icon.png", //默认图标
+    "default_title":"这是一个实例谷歌插件",//图标悬停时的标题，可选
+    "default_popup":"popup.html" //扩展页面
+  },
+  "minimum_chrome_version": "14",  //扩展，app或皮肤需要的chrome的最小版本
+  "omnibox":{"keyword":"shejilo"},//向地址栏注册一个关键字以提供搜索建议，只能设置一个关键字
+  "permissions"://权限申请，API申请
+  [
+
+    "tabs",//获取书签权限
+    "contextMenus",//右键菜单权限
+    "http://*/*",//跨域权限
+    "https://*/*",//跨域权限
+    "https://www.shejilo.com/*/*"//跨域权限
+  ]
+
+}
+
+

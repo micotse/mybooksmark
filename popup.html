@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的网络收藏夹</title>
+</head>
+    <link rel="stylesheet" href="css/popup.css">
+<body>
+
+<!-- 加载动画 -->
+<div class="spinner" id="spinner">
+  <div class="double-bounce1"></div>
+  <div class="double-bounce2"></div>
+</div>
+
+
+<!-- 右键菜单显示 -->
+<div id="my_menu">
+    <div class="menu">修改</div><hr>
+    <div class="menu">删除</div><hr>
+    <div class="menu">在新标签页打开</div><hr>
+    <div class="menu">在新窗口中打开</div><hr>
+    <div class="menu">添加文件夹</div>
+</div>
+
+
+<!--登录-->
+<div id="loginin" class="login">
+    <div class="login_box">
+        <div class="login_box_1">
+            <div class="login_box_top">
+                <h3>登录是一种态度!</h3>
+                <div class="form-group form-group-x">
+                    <input type="text" id="user" name="username" placeholder="用户名">
+                    <p id="user_p"></p>
+                </div>
+                <div class="form-group form-group-x">
+                    <input type="password" id="password" name="password" placeholder="密码">
+                    <p id="password_p"></p>
+                </div>
+                <button type="button" class="btntj"  id="button1">登录</button>
+               
+                <div class="disanfang">
+                    <div class="disanfang-or">
+                        <span class="disanfang-or-s">第三方登录</span>
+                    </div>
+                    <div class="icondiv">
+                        <a href=""><span class="yuanbg"><span class="icon54"></span></span></a>
+                        <a href=""><span class="yuanbg"><span class="icon55"></span></span></a>
+                        <a href=""><span class="yuanbg"><span class="icon56"></span></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="login_box_botton">
+                <p>
+                    <a href="#">忘记密码</a> |
+                    <a id="zcbtn" href="#">注册</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--注册-->
+<div id="loginzc" class="login">
+    <div class="login_box">
+        <div class="login_box_1">
+            <div class="login_box_top">
+                <h3>注册是一种生活!</h3>
+                <div class="form-group form-group-x">
+                    <input type="text" id="user_z" name="username" class="form-control form_my" aria-describedby="inputGroupSuccess4Status" placeholder="用户名">
+                    <p id="user_p_z"></p>
+                </div>
+                <div class="form-group form-group-x">
+                    <input type="password" id="password_z" name="password" class="form-control form_my" aria-describedby="inputGroupSuccess4Status" placeholder="密码">
+                    <p id="password_p_z"></p>
+                </div>
+                <div class="form-group form-group-x">
+                    <input type="password" id="qpassword_z" name="qpassword" class="form-control form_my" aria-describedby="inputGroupSuccess4Status" placeholder="确认密码">
+                    <p id="qpassword_p_z"></p>
+                </div>
+                <div class="form-group form-group-x">
+                    <input type="email" id="email_z" name="email" class="form-control form_my" aria-describedby="inputGroupSuccess4Status" placeholder="邮箱">
+                    <p id="email_p_z"></p>
+                </div>
+                <button type="button" class="btntj" id="button_zz">注册新帐号</button>
+            </div>
+            <div class="login_box_botton"><p><a id="yyzh" href="#">已有帐号登录</a></p></div>
+
+        </div>
+    </div>
+</div>
+
+<!-- 添加书签 -->
+<div id="bg_click"></div>
+<div class="addbooksmark" id="addbooksmarks">
+
+<div id="addwenjianjia"></div>
+<div id="addwjj_box"><input id="inputaddwjj" type="text" placeholder="请填写文件夹名"> <div class="right_m"><span id="btnaddwjjajax" class="btnqd">确定</span><span id="ycbtn" class="btnqd">取消</span></div> </div>
+
+
+
+    <table class="addbooksmark_box">
+        <thead>
+            <td colspan="2" class="tdhead">添加书签</td>
+        </thead>
+        <tr>
+            <td class="tdwidth" style="padding-bottom: 10px">名称</td>
+            <td style="width: 280px;padding-bottom: 10px"><input id="titlesw" class="inputaddbook" type="text"placeholder="名称"></td>
+        </tr>
+        <tr>
+            <td class="tdwidth">文件夹</td>
+            <td>
+               <select name="" id="fenleibq" class="xzrjj"></select>
+            </td>
+        </tr>
+        <tfoot>
+             <td id="mybtnwjj"  class="footth" colspan="2"> <span id="btnaddwjj" class="mybtn">添加文件夹</span> <div style="float:right;"><span id="okbtn" style="background: #2d78f4" class="mybtn">完成</span> <span id="mybtnqx" class="mybtn">取消</span></div></td>
+        </tfoot>
+    </table>
+    <div class="footbox_add">
+        <p style="margin: 10px 20px;">由于书签直接同步到服务器，所以会有延迟！但不用担心书签未同步问题！</p>
+        <span style="width: 300px; margin-right: 20px;margin-left: 20px;" class="mybtn">官网查看更多</span>
+    </div>
+</div>
+
+
+
+
+<!-- 弹出用户信息 -->
+<div id="userHome"></div>
+<div class="userHome_box">
+    <p>感谢你的使用！如果有什么问题请<br>到我们官方网站联系客服，我们会更好的提供服务！</p>
+    <p>插件管理员：MICOTSE QQ:862268044</p>
+     <span id="clearLs">退出</span>
+</div>
+
+<!-- 书签展示 -->
+<div class="bg_box">
+    <div class="header">
+        <!-- 头部 -->
+        <div class="float-l">
+            <img id="userHomeS" src="images/user.png"></div><h2>MICOTSE网络书签</h2>
+            <div class="float-add"><div id="clickadd" class="float-a"><img id="imglove" src="images/love.png" alt=""><span>收藏</span></div></div>
+        </div><hr>
+        <!-- 搜索栏 -->
+        <div class="input_div"><input type="text" id="search" placeholder="书签搜索"></div><hr>
+        <div id="cont_box_a" class="cont_box"></div><!-- 内容展示 -->
+</div>
+
+<script src="js/popup.js"></script>   
+</body>
+</html>
